@@ -1,0 +1,161 @@
+body {
+  background-color: #020211;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #a9efa2;
+}
+
+.navbar .navbar-container .navbar-brand {
+  color: black;
+}
+
+.offCanvas-body {
+  background-color: #a9efa2;
+}
+
+.offCanvas-body .offCanvas-navigation {
+  margin-top: 30px;
+  height: 300px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.offCanvas-body .offCanvas-navigation .offCanvas-a {
+  border: 1px solid red;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 auto 0 auto;
+}
+
+.offCanvas-header {
+  background-color: #a9efa2;
+}
+
+.offCanvas-header .offCanvas-title {
+  font-size: 2em;
+}
+
+.container-content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 56px;
+  min-height: calc(100vh - 56px);
+  background: #001b47;
+  background: -webkit-gradient(linear, left bottom, left top, from(#001b47), color-stop(4%, #3e5879), color-stop(9%, #9ba5ae), color-stop(12%, #dcb097), color-stop(20%, #fc7001), color-stop(42%, #fca80b), color-stop(59%, #fdc418), to(yellow));
+  background: linear-gradient(0deg, #001b47 0%, #3e5879 4%, #9ba5ae 9%, #dcb097 12%, #fc7001 20%, #fca80b 42%, #fdc418 59%, yellow 100%);
+}
+
+.container-content .container-img {
+  background-image: url(../public/poto/background.png);
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 56px);
+}
+
+.container-content .container-img .img1,
+.container-content .container-img .img2,
+.container-content .container-img .img3,
+.container-content .container-img .img4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-content .container-img .sun-img {
+  position: absolute;
+  bottom: 600px;
+  left: 50px;
+  width: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: sun-img-spin infinite 5s linear;
+          animation: sun-img-spin infinite 5s linear;
+}
+
+.gradient-parent {
+  position: relative;
+  width: 100vw;
+  height: 50px;
+}
+
+.gradient-parent .gradient {
+  position: absolute;
+  bottom: 0.5px;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#152f31), to(#020211));
+  background: linear-gradient(180deg, #152f31 0%, #020211 100%);
+}
+
+.sun-img1 {
+  width: 200px;
+}
+
+.container-content-2 {
+  text-align: center;
+}
+
+.container-content-2 .layanan-judul {
+  color: white;
+  font-size: 3em;
+}
+
+.container-card {
+  height: 150px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-card .task-item {
+  margin: auto;
+  width: 44%;
+  height: 100%;
+  -webkit-box-shadow: 10px 10px 0px 1px rgba(230, 96, 96, 0.81), 10px 10px 0px 3px #000;
+          box-shadow: 10px 10px 0px 1px rgba(230, 96, 96, 0.81), 10px 10px 0px 3px #000;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.container-card .task-item .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-card .task-item .card-body .card-tittle {
+  text-align: center;
+  font-size: 2em;
+  margin: auto 0 auto 0;
+}
+
+footer {
+  margin-top: 100px;
+  width: 100vw;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */

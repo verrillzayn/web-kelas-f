@@ -1,0 +1,404 @@
+@import url(custom.scss);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+
+body {
+  background-color: rgb(2, 2, 17);
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: rgb(169, 239, 162);
+  .navbar-container {
+    .navbar-brand {
+      // color: black;
+      // color: #52704e;
+      color: #223538;
+      font-size: 1.8em;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 600;
+    }
+    .toggle-btn {
+      border: none;
+    }
+    .toggle-btn:active,
+    .toggle-btn:focus {
+      border: 1px;
+      box-shadow: 0 0 0 1px;
+    }
+  }
+}
+
+.offCanvas-body {
+  background-color: rgb(169, 239, 162);
+  // width: 70%;
+  .offCanvas-navigation {
+    margin-top: 50px;
+    height: 400px;
+    // border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+
+    .offCanvas-a {
+      color: #223538;
+      text-decoration: none;
+      font-size: 2em;
+      margin: 0 auto 0 auto;
+      font-family: 'Satisfy', cursive;
+    }
+  }
+}
+
+.offCanvas-header {
+  background-color: rgb(169, 239, 162);
+  .offCanvas-title {
+    // color: #52704e;
+    font-size: 2em;
+  }
+}
+
+.container-content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  // border: 2px solid black;
+  margin-top: 56px;
+  // min-height: 91vh;
+  min-height: calc(100vh - 56px);
+  background: rgb(0, 27, 71);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 27, 71, 1) 0%,
+    rgba(62, 88, 121, 1) 4%,
+    rgba(155, 165, 174, 1) 9%,
+    rgba(220, 176, 151, 1) 12%,
+    rgba(252, 112, 1, 1) 20%,
+    rgba(252, 168, 11, 1) 42%,
+    rgba(253, 196, 24, 1) 59%,
+    rgba(255, 255, 0, 1) 100%
+  );
+
+  .container-img {
+    background-image: url(../public/poto/background.png);
+    // border: 2px solid purple;
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 56px);
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      object-fit: cover;
+    }
+
+    .sun-img {
+      // border: 2px solid black;
+      position: absolute;
+      bottom: 600px;
+      left: 50px;
+      // width: 100%;
+      width: 90px;
+      // height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.gradient-parent {
+  // border: 2px solid black;
+  position: relative;
+  width: 100vw;
+  height: 50px;
+  .gradient {
+    position: absolute;
+    bottom: 0.5px;
+    right: 0;
+    height: 50px;
+    width: 100%;
+    // background-color: rgb(21, 47, 49);
+    background: linear-gradient(180deg, rgb(21, 47, 49) 0%, rgb(2, 2, 17) 100%);
+    // background-color: blue;
+  }
+}
+
+.sun-img1 {
+  width: 200px;
+}
+
+.container-content-2 {
+  // border: 2px solid white;
+  text-align: center;
+  .layanan-judul {
+    color: rgb(179, 232, 233);
+    font-size: 4em;
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+.container-card {
+  height: 150px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .task-item {
+    margin: auto;
+    width: 44%;
+    height: 100%;
+    box-shadow: 10px 10px 0px 1px rgba(230, 96, 96, 0.81), 10px 10px 0px 3px #000;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    // border: 2px solid black;
+    border-radius: 15px;
+    .card-body {
+      display: flex;
+      justify-content: center;
+      .card-a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #223538;
+
+        .card-tittle {
+          // border: 2px solid black;
+          font-family: 'El Messiri', sans-serif;
+          text-align: center;
+          font-size: 2em;
+          margin: auto 0 auto 0;
+        }
+      }
+    }
+  }
+  .list-card {
+    width: 88%;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  width: 100vw;
+  height: 100px;
+  // border: 2px solid white;
+}
+
+// carousel
+
+.container-jadwal {
+  // border: 2px solid white;
+  // background-color: greenyellow;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+.kotak-hari {
+  border: 2px solid white;
+  padding: 5px;
+  height: 270px;
+  border-radius: 12px;
+  background-color: white;
+  .hari {
+    font-family: 'Playfair Display', serif;
+  }
+}
+.carousel__slide {
+  .ke1 {
+    box-shadow: 10px 10px 0px 1px rgba(230, 96, 96, 0.81), 10px 10px 0px 3px #000;
+  }
+  .ke2 {
+    box-shadow: 10px 10px 0px 1px rgba(89, 255, 125, 0.81), 10px 10px 0px 3px #000;
+  }
+  .ke3 {
+    box-shadow: 10px 10px 0px 1px rgba(235, 255, 80, 0.81), 10px 10px 0px 3px #000;
+  }
+  .ke4 {
+    box-shadow: 10px 10px 0px 1px rgba(84, 147, 255, 0.81), 10px 10px 0px 3px #000;
+  }
+  .ke5 {
+    box-shadow: 10px 10px 0px 1px rgba(255, 121, 246, 0.81), 10px 10px 0px 3px #000;
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 0.5fr repeat(4, 1fr);
+      grid-column-gap: 3px;
+      // grid-row-gap: 20px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .div2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    .div3 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .div4 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .div5 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    .div6 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    .div7 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    .div8 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    .div9 {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    .div10 {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+    .div11 {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+    .div12 {
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    .div13 {
+      grid-area: 5 / 1 / 6 / 2;
+      font-weight: 800;
+    }
+    .div14 {
+      font-weight: 800;
+      grid-area: 5 / 2 / 6 / 3;
+    }
+    .div15 {
+      font-weight: 800;
+      grid-area: 5 / 3 / 6 / 4;
+    }
+  }
+  .ke6 {
+    box-shadow: 10px 10px 0px 1px rgba(0, 146, 114, 0.81), 10px 10px 0px 3px #000;
+  }
+  .ke7 {
+    box-shadow: 10px 10px 0px 1px rgba(89, 255, 191, 0.81), 10px 10px 0px 3px #000;
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 15px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  font-weight: 800;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  font-weight: 800;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  font-weight: 800;
+}
+.div4 {
+  grid-area: 2 / 1 / 3 / 2;
+  font-weight: 800;
+}
+.div5 {
+  font-weight: 800;
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  font-weight: 800;
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div7 {
+  font-weight: 800;
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div8 {
+  font-weight: 800;
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div9 {
+  font-weight: 800;
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div10 {
+  font-weight: 800;
+  grid-area: 4 / 1 / 5 / 2;
+}
+.div11 {
+  font-weight: 800;
+  grid-area: 4 / 2 / 5 / 3;
+}
+.div12 {
+  grid-area: 4 / 3 / 5 / 4;
+  font-weight: 800;
+}
+.div13 {
+  grid-area: 5 / 1 / 6 / 2;
+  font-weight: 800;
+}
+.div14 {
+  font-weight: 800;
+}
+.div15 {
+  font-weight: 800;
+}
+
+// end carousel
+.container-list-tugas {
+  margin-top: 50px;
+  // border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .card-body {
+    flex-direction: column;
+  }
+}
+
+.task-card-list {
+  border: 2px solid yellow;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-btn-inCardTaskList {
+  // border: 1px solid black;
+  display: flex;
+  justify-content: end;
+  button {
+    margin-left: 10px;
+  }
+  .btn-delete {
+    background-color: red;
+    border: red;
+  }
+  .btn-delete:focus {
+    box-shadow: none;
+  }
+}
