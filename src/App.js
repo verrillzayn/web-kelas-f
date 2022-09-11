@@ -9,6 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Jadwal from './components/Jadwal';
 import ListTugas from './components/ListTugas';
+import Absen from './components/absen/Absen';
 
 function App() {
   // document.body.style.backgroundColor = 'red';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/jadwal-kelas" element={<Jadwal />} />
         <Route path="/list-tugas" element={<ListTugas />} />
+        <Route path="/daftar-hadir" element={<Absen />} />
       </Routes>
       <Footer />
     </>

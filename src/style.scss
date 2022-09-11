@@ -136,6 +136,7 @@ body {
 .container-content-2 {
   // border: 2px solid white;
   text-align: center;
+  height: fit-content;
   .layanan-judul {
     color: rgb(179, 232, 233);
     font-size: 4em;
@@ -144,10 +145,18 @@ body {
 }
 
 .container-card {
-  height: 150px;
+  // border: 2px solid white;
+  min-height: 150px;
+  height: max-content;
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  // flex-direction: column;
+  flex-wrap: wrap;
+
+  .card-home {
+    min-height: 120px;
+  }
 
   .task-item {
     margin: auto;
@@ -400,5 +409,55 @@ $grid-breakpoints: (
   }
   .btn-delete:focus {
     box-shadow: none;
+  }
+}
+
+// absen
+.container-absen {
+  border: 2px solid yellow;
+
+  background-color: white;
+  width: 98%;
+  margin: 70px auto auto auto;
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  .tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .tg .tg-9wq8 {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .tg .tg-c3ow {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
   }
 }

@@ -10,6 +10,7 @@ const Home = () => {
       <div className="container-card">
         <Card link="/list-tugas" text="List tugas" />
         <Card link="/jadwal-kelas" text="Jadwal Kelas" />
+        <Card link="/daftar-hadir" text="Daftar Hadir" />
       </div>
     </>
   );
