@@ -35,6 +35,11 @@ const Navigasi = () => {
                     Jadwal Kelas
                   </Link>
                 </div>
+                <div>
+                  <Link className="offCanvas-a" to="/daftar-hadir">
+                    Daftar Hadir
+                  </Link>
+                </div>
               </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

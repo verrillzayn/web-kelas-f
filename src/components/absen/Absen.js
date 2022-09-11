@@ -1,12 +1,7 @@
 import React from 'react';
-import TableAbsen from './TableAbsen';
-
-import Mahsiswa from '../Mahasiswa.json';
 import AccordionAbsen from './AccordionAbsen';
 
 const Absen = () => {
-  console.log(Mahsiswa);
-
   return (
     <>
       <div className="container-content-2">

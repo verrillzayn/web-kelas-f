@@ -12,16 +12,15 @@ import ListTugas from './components/ListTugas';
 import Absen from './components/absen/Absen';
 
 function App() {
-  // document.body.style.backgroundColor = 'red';
   return (
     <>
       <Navigasi />
       <Content />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/jadwal-kelas" element={<Jadwal />} />
-        <Route path="/list-tugas" element={<ListTugas />} />
-        <Route path="/daftar-hadir" element={<Absen />} />
+        <Route path="/web-kelas-f/home" element={<Home />} />
+        <Route path="/web-kelas-f/jadwal-kelas" element={<Jadwal />} />
+        <Route path="/web-kelas-f/list-tugas" element={<ListTugas />} />
+        <Route path="/web-kelas-f/daftar-hadir" element={<Absen />} />
       </Routes>
       <Footer />
     </>

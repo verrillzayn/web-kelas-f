@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ListCard from './ListCard';
 import ListModal from './ListModal';
 
 const ListTugas = () => {
