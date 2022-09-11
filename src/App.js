@@ -9,7 +9,6 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Jadwal from './components/Jadwal';
 import ListTugas from './components/ListTugas';
-import Parenttodo from './components/Parenttodo';
 
 function App() {
   // document.body.style.backgroundColor = 'red';

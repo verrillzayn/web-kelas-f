@@ -8,52 +8,52 @@ import ListCard from './ListCard';
 const ListModal = (props) => {
   const [show, setShow] = useState(false);
 
-  const [inputValues, setInputValue] = useState({
-    items: [],
-    item: '',
-  });
+  const [inputValues, setInputValue] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   const [matkul, setMatkul] = useState();
   const [tugas, setTugas] = useState();
   const [deadline, setDeadline] = useState();
 
+  useEffect(() => {
+    if (localStorage.getItem('localTasks')) {
+      const storedList = JSON.parse(localStorage.getItem('localTasks'));
+      setTasks(storedList);
+    }
+  }, []);
+
   const getTugas = (e) => {
-    // console.log(e.target.value);
     setTugas(e.target.value);
   };
   const getMatkul = (e) => {
-    // console.log(e.target.value);
     setMatkul(e.target.value);
   };
   const getDeadline = (e) => {
-    // console.log(e.target.value);
     setDeadline(e.target.value);
   };
 
   useEffect(() => {
     getInputValues();
-    // handleSubmit();
   }, [tugas, matkul, deadline]);
 
   const getInputValues = () => {
-    setInputValue({
-      items: [...inputValues.items],
-      item: [tugas, matkul, deadline],
-    });
+    setInputValue([tugas, matkul, deadline]);
   };
 
-  // const [abc, setAbc] = useEffect([]);
-  const handleSubmit = () => {
-    // getInputValues();
-    setInputValue({
-      items: [...inputValues.items, inputValues.item],
-      item: '',
-    });
-    // setAbc(JSON.stringify(inputValues));
-    localStorage.setItem('inputValues', JSON.stringify(inputValues));
+  const handleSubmit = (e) => {
+    if (inputValues) {
+      const newTask = { id: new Date().getTime().toString(), val: { tugas: inputValues[0], matkul: inputValues[1], deadline: inputValues[2] } };
+      setTasks([...tasks, newTask]);
+      localStorage.setItem('localTasks', JSON.stringify([...tasks, newTask]));
+      setInputValue([]);
+    }
   };
 
-  // console.log(abc);
+  const handleDelete = (task) => {
+    const deleted = tasks.filter((t) => t.id !== task.id);
+    setTasks(deleted);
+    localStorage.setItem('localTasks', JSON.stringify(deleted));
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -95,10 +95,9 @@ const ListModal = (props) => {
         </Modal.Footer>
       </Modal>
       <div className="container-card task-card-list">
-        {inputValues.items.map((e, i) => {
-          return <ListCard key={i} tugas={e[0]} matkul={e[1]} deadline={e[2]} />;
+        {tasks.map((e) => {
+          return <ListCard key={e.id} handleDelete={() => handleDelete(e)} tugas={e.val.tugas} matkul={e.val.matkul} deadline={e.val.deadline} />;
         })}
-        {/* {localStorage.getItem('inputValues')} */}
       </div>
     </>
   );

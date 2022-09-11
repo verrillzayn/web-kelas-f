@@ -12,7 +12,7 @@ const ListCard = (props) => {
           <Button className="btn-edit" variant="primary">
             edit
           </Button>
-          <Button className="btn-delete" variant="primary">
+          <Button onClick={() => props.handleDelete()} className="btn-delete" variant="primary">
             delete
           </Button>
         </div>
