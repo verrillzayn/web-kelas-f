@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
+import ProfileImg from '../blank-profile-picture-973460_960_720 (1).png';
+import Image from 'react-bootstrap/Image';
 
 const Navigasi = () => {
   const expand = 'lg';
@@ -13,6 +15,9 @@ const Navigasi = () => {
           <Navbar.Brand className="navbar-brand" href="#home">
             MKS Kelas F
           </Navbar.Brand>
+          <div className="profile-img-nav-container">
+            <img src={ProfileImg} alt="" />
+          </div>
           <Navbar.Toggle className="toggle-btn" aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
             <Offcanvas.Header className="offCanvas-header" closeButton>
@@ -40,11 +45,11 @@ const Navigasi = () => {
                     Daftar Hadir
                   </Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link className="offCanvas-a" to="/web-kelas-f/todo-app">
                     To do App
                   </Link>
-                </div>
+                </div> */}
               </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

@@ -23,13 +23,26 @@ body {
 
 .navbar .navbar-container .toggle-btn {
   border: none;
+  padding: 0;
 }
 
 .navbar .navbar-container .toggle-btn:active,
 .navbar .navbar-container .toggle-btn:focus {
-  border: 1px;
-  -webkit-box-shadow: 0 0 0 1px;
-          box-shadow: 0 0 0 1px;
+  border: 0px;
+  -webkit-box-shadow: 0 0 0 0px;
+          box-shadow: 0 0 0 0px;
+}
+
+.navbar .navbar-container .profile-img-nav-container {
+  margin-left: 140px;
+  width: 9%;
+  border-radius: 100%;
+}
+
+.navbar .navbar-container .profile-img-nav-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
 }
 
 .offCanvas-body {
