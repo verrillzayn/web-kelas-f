@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 import ProfileImg from '../blank-profile-picture-973460_960_720 (1).png';
-import Image from 'react-bootstrap/Image';
 
 const Navigasi = () => {
   const expand = 'lg';
