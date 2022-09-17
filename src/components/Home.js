@@ -11,6 +11,7 @@ const Home = () => {
         <Card link="/web-kelas-f/list-tugas" text="List tugas" />
         <Card link="/web-kelas-f/jadwal-kelas" text="Jadwal Kelas" />
         <Card link="/web-kelas-f/daftar-hadir" text="Daftar Hadir" />
+        <Card link="/web-kelas-f/todo-app" text="Todo App" />
       </div>
     </>
   );

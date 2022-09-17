@@ -1,6 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import gsap, { Linear } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import sun from '../sun1.png';
+import awan from '../awan-layer-1.png';
+import gunung1 from '../gunung-layer-2.png';
+import gunung2 from '../gunung-layer-3.png';
+import pohon from '../pohon-layer-4.png';
 gsap.registerPlugin(ScrollTrigger);
 
 const Content = () => {
@@ -40,11 +45,11 @@ const Content = () => {
     <>
       <div className="container-content">
         <div className="container-img">
-          <img ref={ref} className="sun-img" src="poto/sun1.png" alt="asd" />
-          <img ref={ref} className="img1" src="poto/awan-layer-1.png" alt="mountain" />
-          <img ref={ref} className="img2" src="poto/gunung-layer-2.png" alt="mountain" />
-          <img ref={ref} className="img3" src="poto/gunung-layer-3.png" alt="mountain" />
-          <img ref={ref} className="img4" src="poto/pohon-layer-4.png" alt="mountain" />
+          <img ref={ref} className="sun-img" src={sun} alt="asd" />
+          <img ref={ref} className="img1" src={awan} alt="mountain" />
+          <img ref={ref} className="img2" src={gunung1} alt="mountain" />
+          <img ref={ref} className="img3" src={gunung2} alt="mountain" />
+          <img ref={ref} className="img4" src={pohon} alt="mountain" />
         </div>
       </div>
       <div className="gradient-parent">

@@ -1,0 +1,36 @@
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "asd",
+    "email" : "asd@gmail.com",
+    "gender" : "female"
+}
+###
+
+POST http://localhost:5000/task-list
+Content-Type: application/json
+
+{
+    "tugas" : "membuat video",
+    "matkul" : "ilmu tauhid",
+    "deadline" : "besok"
+}
+
+###
+PATCH  http://localhost:5000/users/6324cd18d326a503dced504e
+Content-Type: application/json
+
+{
+    "name" : "asdasa",
+    "email" : "aascacassd@gmail.com",
+    "gender" : "male"
+}
+
+
+###
+DELETE http://localhost:5000/users/6324cd18d326a503dced504e

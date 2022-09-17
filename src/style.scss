@@ -363,6 +363,11 @@ $grid-breakpoints: (
   }
 }
 
+// .card-li {
+//   width: 50%;
+//   box-shadow: 10px 10px 0px 1px rgba(0, 146, 114, 0.81), 10px 10px 0px 3px #000;
+// }
+
 .task-card-list {
   height: fit-content;
   display: flex;
@@ -473,4 +478,14 @@ $grid-breakpoints: (
   .offCanvas-header {
     display: none;
   }
+}
+
+// task list
+
+.add-button-task-list {
+  width: 100%;
+}
+
+.task-list-card-container {
+  margin-top: 0px;
 }

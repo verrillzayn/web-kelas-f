@@ -40,6 +40,11 @@ const Navigasi = () => {
                     Daftar Hadir
                   </Link>
                 </div>
+                <div>
+                  <Link className="offCanvas-a" to="/web-kelas-f/todo-app">
+                    To do App
+                  </Link>
+                </div>
               </div>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
